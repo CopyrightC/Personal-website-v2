@@ -1,0 +1,67 @@
+
+.home-main{
+    background-color: #171414;
+    width: 100vw;
+    height: 100vh;
+
+    flex-direction: column;
+    font-family: "fira code";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-input-area{
+    display: flex;
+    position: relative;
+}
+#input{
+    display: inline-block;
+    min-width: 2rem;
+    outline: none;
+    margin-right: 2rem;
+    max-width: 60%;
+    position: absolute;
+    caret-color: #f0f0f0;
+    left: 22.8rem;
+    top: 3rem;
+    color: rgba(236, 236, 236, 0.774);
+
+}
+.buttons .img{
+    margin-right: 1.3rem;
+    align-self: right;
+    height: 60%;
+}
+.command{
+    color: #41AD38;
+    margin:3rem 0 0 1.6rem;
+}
+#location{
+    position: relative;
+}
+.window{
+    position: relative;
+    width: 85vw;
+    overflow: hidden;
+    height: 85vh;
+    border:2px solid rgba(112, 105, 105, 0.274);;
+    border-top: none;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0;
+    background-color: rgba(112, 105, 105, 0.274);
+    height: 2rem;  
+}
+
+@media (max-width: 768px){
+    html{
+    font-size: 70%;
+    }
+}
