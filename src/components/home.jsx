@@ -1,24 +1,8 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import "../styles/home.css"
 import { Input } from "./input"
 export const Home = () => {
 
-    const addMsg = (Message) => {
-        let main_div = document.getElementById("window")
-        console.log(main_div)
-        let msg = document.createElement("p")
-        msg.className = "command"
-        let text = document.createTextNode(Message)
-        msg.appendChild(text)
-        main_div.appendChild(msg)
-    }
-
-
-
-    const focus = () => {
-        let input = document.getElementById("input")
-        input.focus();
-    }
     return (
         <div className="home-main">
             <div className="buttons">
@@ -33,7 +17,6 @@ export const Home = () => {
                     <br />
                     Type !help for more info
                 </p>
-
 
             </div>
             <Input />

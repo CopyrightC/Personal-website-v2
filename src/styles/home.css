@@ -18,8 +18,21 @@
     height: 60%;
 }
 .command{
+    font-size: 1.2rem;
     color: #41AD38;
     margin:3rem 0 0 1.6rem;
+}
+.output{
+    font-family: "fira code";
+    font-size: 1.2rem;
+
+    color: #e4e7e8;
+    margin:1.4rem 1.7rem;
+}
+.location{
+    font-size: 1.3rem;
+    color: #41AD38;
+    margin:1.4rem 1.7rem;
 }
 #location{ 
     position: relative;
