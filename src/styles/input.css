@@ -1,0 +1,9 @@
+textarea{
+    width: 85vw;
+    height: 5rem;
+    color:rgb(231, 233, 229);
+    resize: none;
+    font-size: 1.3rem;
+    background-color: rgb(51, 53, 49);
+    outline: none;
+}
