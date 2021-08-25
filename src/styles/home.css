@@ -12,10 +12,20 @@
 }
 
 
-.buttons .img{
-    margin-right: 1.3rem;
-    align-self: right;
+#buttons .img{
+    position: relative;
+    left: .5rem;
+    align-self: center;
     height: 60%;
+}
+
+.img-hldr{
+    width: 2.3rem;
+    background-color: white;
+    margin-left: .1rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 .command{
     font-size: 1.2rem;
@@ -48,7 +58,7 @@
     border-top: none;
 }
 
-.buttons{
+#buttons{
     width: 85vw;
     display: flex;
     flex-direction: row-reverse;
