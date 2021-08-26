@@ -67,6 +67,12 @@ On the internet, I'm known as Copyright(C), quite weird huh?`)
             window.open("https://stackoverflow.com/users/13845215/copyrightc", "_blank");
             addMsg("Successfully opened")
         }
+
+        else if ((value === "hi") || (value === "hello") || (value === "hey")) {
+            addMsg(`webTerminal@home: ~$ ${value} `, true);
+            addMsg("Hey :)")
+        }
+
         else if (value === "cd gui") {
             addMsg("changed dir to gui")
             window.open("https://copyrightc.netlify.app/", "_blank");
@@ -79,8 +85,15 @@ On the internet, I'm known as Copyright(C), quite weird huh?`)
             addMsg("Successfully opened")
         }
         else {
-            addMsg(`webTerminal@home: ~$ ${value} `, true)
-            addMsg(">>>Invalid command", false, false, true)
+            try {
+                let x = eval(value)
+                addMsg(`webTerminal@home: ~$ ${value} `, true)
+                addMsg(`>>>${x}`)
+            }
+            catch {
+                addMsg(`webTerminal@home: ~$ ${value} `, true)
+                addMsg(">>>Invalid command", false, false, true)
+            }
         }
     }
 }
