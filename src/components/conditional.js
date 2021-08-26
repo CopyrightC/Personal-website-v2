@@ -23,7 +23,9 @@ export const conditionalOutput = (addMsg, value) => {
 5. !github - redirects to my github account${"\n"}
 6. !so - redirects to my stackoverflow account ${"\n"}
 7. !discord - Wanna talk to me?${"\n"}
-8. !r - reloads the website`)
+8. !r - reloads the website${"\n"}
+9. !src - redirects to github repository of this website`
+            )
         }
 
         else if (value === "!clear") {
@@ -47,6 +49,12 @@ On the internet, I'm known as Copyright(C), quite weird huh?`)
         }
 
         //link commands 
+
+        else if (value === "!src") {
+            addMsg("Opening https://github.com/SATAN01/Personal-website-v2/ ...")
+            window.open("https://github.com/SATAN01/Personal-website-v2/", "_blank")
+            addMsg("Successfully opened")
+        }
 
         else if (value === "!projects") {
             addMsg("Opening https://copyrightc.netlify.app/#text ...")
