@@ -6,4 +6,5 @@ textarea{
     font-size: 1.3rem;
     background-color: rgb(51, 53, 49);
     outline: none;
+    padding: 1rem;
 }
