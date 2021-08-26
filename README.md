@@ -12,3 +12,6 @@ cd Personal-website-v2
 npm install
 npm start
 ```
+
+# Hosting
+Hosted on https://copyrightcv2.netlify.app/
