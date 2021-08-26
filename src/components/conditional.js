@@ -93,15 +93,9 @@ On the internet, I'm known as Copyright(C), quite weird huh?`)
             addMsg("Successfully opened")
         }
         else {
-            try {
-                let x = eval(value)
-                addMsg(`webTerminal@home: ~$ ${value} `, true)
-                addMsg(`>>>${x}`)
-            }
-            catch {
-                addMsg(`webTerminal@home: ~$ ${value} `, true)
-                addMsg(">>>Invalid command", false, false, true)
-            }
+
+            addMsg(`webTerminal@home: ~$ ${value} `, true)
+            addMsg(">>>Invalid command", false, false, true)
         }
     }
 }
