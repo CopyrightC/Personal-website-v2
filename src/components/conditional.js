@@ -32,8 +32,8 @@ export const conditionalOutput = (addMsg, value) => {
             let window = document.getElementById("window")
             window.textContent = ''
             addMsg(`CopyrightC's Terminal
-    Hi! On the internet I'm known as CopyrightC
-    Type !help for more info${"\n"}`, false, true)
+Hi! On the internet I'm known as CopyrightC
+Type !help for more info${"\n"}`, false, true)
         }
 
         else if (value === "!r") {
@@ -44,7 +44,7 @@ export const conditionalOutput = (addMsg, value) => {
 
         else if (value === "!whoami") {
             addMsg(`webTerminal@home: ~$ ${value} `, true)
-            addMsg(`Hello, my name is ...(secret, you can call me CopyrightC)
+            addMsg(`Hello, my name is ...(secret)
 On the internet, I'm known as Copyright(C), quite weird huh?`)
         }
 
