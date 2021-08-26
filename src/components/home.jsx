@@ -18,7 +18,7 @@ export const Home = () => {
         })
     })
 
-    const addMsg = (Message, locationId = false, clear = false) => {
+    const addMsg = (Message, locationId = false, clear = false, error = false) => {
 
         let main_div = document.getElementById("window")
         let msg = document.createElement("p")
@@ -34,7 +34,9 @@ export const Home = () => {
                 _pre.className = "command"
             }
             else {
-                _pre.className = "output"
+                if (error) { _pre.className = "error-msg" }
+
+                else { _pre.className = "output" }
             }
         }
 

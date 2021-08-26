@@ -30,8 +30,8 @@ export const conditionalOutput = (addMsg, value) => {
             let window = document.getElementById("window")
             window.textContent = ''
             addMsg(`CopyrightC's Terminal
-Hi! On the internet I'm known as CopyrightC
-Type !help for more info${"\n"}`, false, true)
+    Hi! On the internet I'm known as CopyrightC
+    Type !help for more info${"\n"}`, false, true)
         }
 
         else if (value === "!r") {
@@ -80,7 +80,7 @@ On the internet, I'm known as Copyright(C), quite weird huh?`)
         }
         else {
             addMsg(`webTerminal@home: ~$ ${value} `, true)
-            addMsg(">>>Invalid command")
+            addMsg(">>>Invalid command", false, false, true)
         }
     }
 }
