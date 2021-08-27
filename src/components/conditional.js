@@ -1,4 +1,5 @@
 let reload = false;
+let darkMode = true
 export const conditionalOutput = (addMsg, value) => {
     if (reload) {
         if (value === "y") {
@@ -24,16 +25,25 @@ export const conditionalOutput = (addMsg, value) => {
 6. !so - redirects to my stackoverflow account ${"\n"}
 7. !discord - Wanna talk to me?${"\n"}
 8. !r - reloads the website${"\n"}
-9. !src - redirects to github repository of this website`
+9. !src - redirects to github repository of this website${"\n"}
+10.!switch - switches between light and dark mode`
             )
         }
-
+        else if (value === "") { }
         else if (value === "!clear") {
             let window = document.getElementById("window")
             window.textContent = ''
             addMsg(`CopyrightC's Terminal
 Hi! On the internet I'm known as CopyrightC
 Type !help for more info${"\n"}`, false, true)
+        }
+
+        else if (value === "!switch") {
+            darkMode = !darkMode;
+            let elem = document.getElementById("home-main")
+            if (darkMode) {
+                elem.setAttribute("style", "background")
+            }
         }
 
         else if (value === "!r") {
