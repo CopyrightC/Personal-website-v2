@@ -37,14 +37,6 @@ Hi! On the internet I'm known as CopyrightC
 Type !help for more info${"\n"}`, false, true)
         }
 
-        else if (value === "!switch") {
-            darkMode = !darkMode;
-            let elem = document.getElementById("home-main")
-            if (darkMode) {
-                elem.setAttribute("style", "background")
-            }
-        }
-
         else if (value === "!r") {
             addMsg(`webTerminal@home:~$ ${value}`, true)
             addMsg(">>>Are you sure you want to reload the window?(y/n)")
