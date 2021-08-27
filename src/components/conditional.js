@@ -1,5 +1,5 @@
 let reload = false;
-let darkMode = true
+
 export const conditionalOutput = (addMsg, value) => {
     if (reload) {
         if (value === "y") {
@@ -25,8 +25,7 @@ export const conditionalOutput = (addMsg, value) => {
 6. !so - redirects to my stackoverflow account ${"\n"}
 7. !discord - Wanna talk to me?${"\n"}
 8. !r - reloads the website${"\n"}
-9. !src - redirects to github repository of this website${"\n"}
-10.!switch - switches between light and dark mode`
+9. !src - redirects to github repository of this website${"\n"}`
             )
         }
         else if (value === "") { }
